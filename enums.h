@@ -1,0 +1,26 @@
+#ifndef ENUMS_H
+#define ENUMS_H
+
+typedef enum _State
+{
+    STATE_INITIALIZED = 0,
+    STATE_CONNECTING,
+    STATE_CONNECTED,
+    STATE_JOINING,
+    STATE_JOINED,
+    STATE_LEAVING,
+    STATE_LEFT,
+    STATE_DISCONNECTING,
+    STATE_DISCONNECTED
+} State;
+
+typedef enum _Input
+{
+    INPUT_NON = 0,
+    INPUT_CREATE_GAME,
+    INPUT_JOIN_RANDOM_GAME,
+    INPUT_LEAVE_GAME,
+    INPUT_EXIT
+} Input;
+
+#endif // ENUMS_H
